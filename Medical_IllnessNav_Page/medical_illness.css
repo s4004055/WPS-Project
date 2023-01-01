@@ -73,6 +73,9 @@ li.item a:hover {
     font-weight: thin;
     margin: 0px;
     cursor:pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 #nav_buttons span button {

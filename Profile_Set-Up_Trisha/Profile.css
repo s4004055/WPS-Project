@@ -1,0 +1,160 @@
+body{
+    background-color: lightseagreen; /*example bg colour*/
+}
+
+h1{
+    /* enter graduate form after getting extension on Vs code */
+    font-size:8ch;
+    position: relative;
+    left:30px;
+    max-width: fit-content;
+    display: inline-block;
+    margin-right: 50px;
+
+}
+
+#message{
+    border: 1px dashed black;
+    max-width: fit-content;
+    padding:20px;
+    font-weight: lighter;
+    display: inline-block;
+    vertical-align: 10px;
+    background-color: lightgray;
+}
+
+form {
+    border: 1px solid purple;
+    max-width: 60%;
+    max-height: auto;
+    background-color: beige;
+    padding: 20px; 
+    display: wrap;
+    justify-content: center;
+}
+
+.fullName{
+    position: relative;
+    left:30px;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#firstName , #LastName{
+    position: relative;
+    right:10px;
+    font-family:serif;
+    border: 1px solid blue;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.dropdowns{
+    border: 1px solid purple;
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#gender{
+    background-color: aqua;
+    padding:30px;
+}
+
+#dropdown_input1{
+    border: 1px solid black;
+    padding: 20px;
+
+}
+
+datalist option{ /*try and change style of datalist*/
+    font-size: 10px;
+    padding: 20px;
+}
+
+#dropdown_input2{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.address{
+    border: 1px solid black;
+    padding: 10px;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: fit-content;
+    display: inline-block;
+}
+
+.personal_contact{
+    border: 1px solid purple;
+    max-width: fit-content;
+    display: inline-block;
+    position:relative;
+    left: 130px;
+    bottom:150px;
+}
+
+#street1, #street2, #city{
+    font-family:serif;
+    border: 1px solid blue;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    font-size: larger;
+    text-align: center;
+}
+
+#postcode{
+    font-family:serif;
+    border: 1px solid blue;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    font-size: larger;
+    text-align: center;
+}
+
+#phone, #email{
+    font-family:serif;
+    border: 1px solid blue;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    font-size: larger;
+    text-align: center;
+}
+
+/* style drop-down to be same size as input cells for the other values. */
+
+.important_details{
+    border: 1px solid black;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#creditCard, #medicare{
+    font-family:serif;
+    border: 1px solid blue;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    font-size: larger;
+    text-align: center;
+}

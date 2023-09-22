@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="Profile.css">
+</head>
+<body>
+    <form action="" method="post">
+    <div id="heading">
+    <h1>Profile</h1>
+    <h3 id="message">Note (*) marks required information</h3>
+    </div>
+
+    <div class="fullName">
+        <label for="firstName">Enter full Name</label><br>
+        <input type="text" id="firstName" name="firstName" placeholder="First_Name" required>
+
+        <label for="LastName"></label>
+        <input type="text" id="LastName" name="LastName" placeholder="Surname" required>
+    </div>
+    <br><br>
+
+    <div class="dropdowns">
+    <div id="dropdown_input1">
+        <label for="DOB">Date of Birth</label><br>
+            <input type="date" id="DOB" name="DOB" required>
+    </div>
+
+
+    <div id="dropdown_input2">
+        <label for="gender">Gender</label><br>
+        <select type="text" id="gender" name="gender" size="2" multiple required>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+        </select>
+    </div>
+    </div>
+
+    <div class="address">
+        <label for="address">Address</label><br>
+        <input type="text" id="street1" name="street" placeholder="Street Address" required><br>
+        <input type="text" id="street2" name="street" placeholder="Street Address Line 2" required><br>
+        <input type="text" id="city" name="city" placeholder="City" required><br>
+        <select type="text" id="state" name="state" placeholder="State" required><br>
+            <option value="state">VIC</option>
+            <option value="state">SA</option>
+        </select>
+        <input type="text" id="postcode" name="postcode" placeholder="Postcode" required><br> <!--Add javascript to validate, 4 numbers and must be numbers-->
+    </div>
+    <div class="personal_contact">
+        <!-- need this to be float to the right top of the section aligned with the street address items -->
+        <input type="text" id="phone" name="phone" placeholder="Phone number" required><br>
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
+    </div>
+
+    <div class="important_details">
+        <label for="medicare">Medicare Number</label><br>
+        <input type="medicare" id="medicare" name="medicare" placeholder="XXXX XXXX">
+        <select type="medicare"  id="ref" name="ref" placeholder="1"><br>
+            <option value="ref">1</option>
+            <option value="ref">2</option>
+            <option value="ref">3</option>
+            <option value="ref">4</option>
+        </select>
+
+        <label for="creditCard">Credit Card Number</label><br>
+        <input type="medicare" id="medicare" name="medicare" placeholder="XXXX XXXX">
+    </div>
+    </form>
+</body>
+</html>
+
+
+
+<!-- 1. Validate data in Profile
+2. Style Drop down menus. Separately
+3. Link to database and fix viewport for device adaptability
+4. Format phone number and credit card -->

@@ -27,15 +27,17 @@ form {
     border: 1px solid purple;
     max-width: 60%;
     max-height: auto;
+    min-width: min-content; /* fixed min content so elements do not stick out */
     background-color: beige;
     padding: 20px; 
     display: wrap;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .fullName{
-    position: relative;
-    left:30px;
+    padding-left: 30px;
+    max-width:fit-content;
     font-size:20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -55,7 +57,7 @@ form {
 }
 
 .dropdowns{
-    border: 1px solid purple;
+    max-width: 73%;
     padding:10px;
     display:flex;
     justify-content: space-between;
@@ -65,42 +67,37 @@ form {
 
 
 #gender{
-    background-color: aqua;
-    padding:30px;
+    border: 1px solid blue;
 }
 
-#dropdown_input1{
-    border: 1px solid black;
-    padding: 20px;
-
+#dropdown_input1, #dropdown_input2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 20px;
 }
 
-datalist option{ /*try and change style of datalist*/
-    font-size: 10px;
-    padding: 20px;
-}
 
-#dropdown_input2{
-    border: 1px solid black;
-    padding: 20px;
+/* CONTINUE WORKING ON THIS SECTION */
+
+.mid-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items:center;
 }
 
 .address{
-    border: 1px solid black;
-    padding: 10px;
+    margin: 30px;
     font-size:20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: fit-content;
-    display: inline-block;
+    float:left;
 }
 
 .personal_contact{
-    border: 1px solid purple;
-    max-width: fit-content;
-    display: inline-block;
-    position:relative;
-    left: 130px;
-    bottom:150px;
+    float: right;
+    margin-bottom: 80px;
+    margin-left:50px;
 }
 
 #street1, #street2, #city{
@@ -108,10 +105,10 @@ datalist option{ /*try and change style of datalist*/
     border: 1px solid blue;
     padding: 10px;
     width: fit-content;
-    margin: 10px;
+    margin-top: 10px;
     background-color: lightgray;
     border-radius: 10px;
-    font-size: larger;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -119,12 +116,14 @@ datalist option{ /*try and change style of datalist*/
     font-family:serif;
     border: 1px solid blue;
     padding: 10px;
-    width: fit-content;
+    width: 100px;
     margin: 10px;
     background-color: lightgray;
     border-radius: 10px;
-    font-size: larger;
+    font-size: 20px;
     text-align: center;
+    position: relative;
+    left: 100px;
 }
 
 #phone, #email{
@@ -135,26 +134,49 @@ datalist option{ /*try and change style of datalist*/
     margin: 10px;
     background-color: lightgray;
     border-radius: 10px;
-    font-size: larger;
+    font-size: 20px;
     text-align: center;
 }
 
 /* style drop-down to be same size as input cells for the other values. */
 
-.important_details{
-    border: 1px solid black;
-    font-size:20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.lower-section{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
+.medical_details, .financial_details{
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: fit-content;
+    display: inline-block;
+}
+
+.financial_details{
+    margin-left: 70px;
+}
+
+.medical_details{
+    margin-left: 10px;
+}
+
+#ref{
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 10px;
+}
 #creditCard, #medicare{
     font-family:serif;
     border: 1px solid blue;
     padding: 10px;
-    width: fit-content;
-    margin: 10px;
+    margin-top: 10px;
     background-color: lightgray;
     border-radius: 10px;
-    font-size: larger;
+    font-size: 20px;
     text-align: center;
+    
 }
+
+
+/* Check : indentation for the detail headings on the page */

@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(236, 234, 234);
+    margin: 0;
+}
+
+.nav-section{
+    background-color: white;
+    padding: 10px 0px;
+    border: 1px solid darkgrey;
+}
+
+ul.nav-bar{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    overflow: hidden;
+}
+
+li.item {
+    float:inline-start; 
+    display: flex; 
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center; 
+}
+
+li.item a {
+    display:inline-block;
+    color:black;
+    text-align:center;
+    border: 1px solid darkgrey;
+    background-color: lightgray;
+    padding: 10px;
+    width:250px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+li.item a:hover {
+    background-color: gray; 
+    color: white; 
+}
+
+.nav_banner{
+    padding: 10px;
+    background-color: black;
+    border: 1px solid gray;
+}
+
+
+.first_section{
+    border: 1px solid gray;
+}
+
+
+
+.Test_for_illness{
+    background-color: gray;
+    margin-top: 100%; /*remove it once page and section is finalised*/
+    padding: 200px;
+}
+
+.footer{
+    border:1px solid black;
+    position:sticky;
+    padding: 100px;
+    background-color: teal;
+}

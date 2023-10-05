@@ -88,22 +88,3 @@ li.item a:hover {
     color:rgb(12, 113, 163);
     border: 2px solid rgb(12, 113, 163);
 }
-
-.first_section{
-    border: 1px solid gray;
-}
-
-
-
-.Test_for_illness{
-    background-color: gray;
-    margin-top: 100%; /*remove it once page and section is finalised*/
-    padding: 200px;
-}
-
-.footer{
-    border:1px solid black;
-    position:sticky;
-    padding: 100px;
-    background-color: teal;
-}

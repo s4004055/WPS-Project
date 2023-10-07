@@ -88,3 +88,23 @@ li.item a:hover {
     color:rgb(12, 113, 163);
     border: 2px solid rgb(12, 113, 163);
 }
+
+/* section below nav bar */
+
+.banner{
+    padding:100px;
+    border: 1px solid black;
+    margin-top:20px;
+    background-color: #00b894;
+    display: fixed;
+}
+h1{
+    font-family: 'Graduate', serif;
+    text-decoration: underline;
+    font-size: 6ch;
+    font-weight: lighter;
+}
+
+.banner img{
+    display: flex;
+}

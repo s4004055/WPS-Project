@@ -365,9 +365,9 @@ h4{
     margin-right:100px;
 }
 
-h3 {
-    position: fixed; /* or use 'absolute' if you prefer absolute positioning */
+/* h3 {
+    position: fixed;
     bottom: 10px;
-    left: 89%; /* You can adjust the 'left' value if needed */
+    left: 89%;
     width: 100%;
-}
+} */

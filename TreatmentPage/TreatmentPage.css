@@ -246,8 +246,9 @@ h4{
     margin-left:100px;
 }
 
-h3 {
-    display: block;
-    font-weight: lighter;
-    position:static;
-}
+/* h3 {
+    position: fixed;
+    bottom: 10px;
+    left: 89%;
+    width: 100%;
+} */

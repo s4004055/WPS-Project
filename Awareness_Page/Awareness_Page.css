@@ -115,6 +115,7 @@ li.item a:hover {
     position: absolute;
     top: 300px;
     left: 40px;
+    background-color: white;
 }
 
 
@@ -272,25 +273,12 @@ li.item a:hover {
     margin-bottom: 0;
 }
 
-/* #news_video{
-    border: 1px solid blue;
-    padding: 100px;
-    background-color: darkgray;
-    border-radius: 50px;
-}
-
-#news_desc{
-     border: 1px solid blue;
-    padding: 100px;
-    background-color: darkgray;
-    border-radius: 50px;
-} */
-
 .facts_slider {
     border: 3px solid green;
     flex: 1;
     padding: 50px;
     box-sizing: border-box;
+    background-color: lightgrey;
 }
 
 .Test_for_illness {
@@ -307,8 +295,8 @@ li.item a:hover {
 }
 
 .Test_for_illness h2 {
-    text-align: left; /* Align the text to the left */
-    margin-left: 0px; /* Add margin to the left for spacing */
+    text-align: left;
+    margin-left: 0px; 
 }
 
 .Test_for_illness p{
@@ -335,31 +323,51 @@ li.item a:hover {
 }
 
 /* footer segment of the page */
-.footer{
-    position:sticky; /*make it sticky when scrolling*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start; 
+    padding: 10px 0px 5% 60px;
     bottom: 0;
     width: 100%;
-    padding: 100px 60px;
     background-color: teal;
     overflow: hidden;
-    top: auto;
+    font-family: 'Open Sans';
 }
 
-.footer h1{
+#footer-left{
+    max-width: fit-content;
+}
+
+h4{
     text-decoration: underline;
-    font-size: 50px;
+    font-size: 6ch;
 }
 
-.footer a{
-    color: black;
+#footer-left a{
+    margin:0;
     text-decoration: none;
     font-size: 30px;
+    margin-right: 5%;
+    font-weight: lighter;
 }
 
-.footer h3{
-    display: block;
-    font-weight: lighter;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+#footer-right{
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 200px;
+    margin-right: 0;
+}
+
+#footer-right h2, a{
+    margin-right:100px;
+}
+
+h3 {
+    position: fixed; /* or use 'absolute' if you prefer absolute positioning */
+    bottom: 10px;
+    left: 89%; /* You can adjust the 'left' value if needed */
+    width: 100%;
 }

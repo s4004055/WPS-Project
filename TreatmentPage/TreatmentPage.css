@@ -146,7 +146,7 @@ h1{
 
 }
 
-.medication_section h2 , .supportiveCare_section h2{
+.medication_section > h2 , .supportiveCare_section > h2{
     font-family: 'Open Sans';
     font-size:6ch;
     max-width: fit-content;
@@ -167,14 +167,13 @@ h1{
    /*insert line border*/
 }
 
-.medication_chart{
-    /* padding:80vh; */
-}
+/* .medication_chart{
+} */
 
 #chartSection{
     background-color: lightgray;
     padding:10px 0px 100px 0px;
-    margin: 50px 100px 0px 100px;
+    margin: 30px 100px 0px 100px;
     border-radius: 50px;
 }
 
@@ -184,6 +183,8 @@ h1{
 }
 
 #chartSection h2{
+    margin-left:10%;
+    margin-bottom: 10px;
     font-family: 'Graduate', serif;
     font-size: 6ch;
     font-weight:lighter;
@@ -199,35 +200,54 @@ h1{
 #summaryPoints{
     padding: 10%;
     background-color: white;
-    margin: 30px 7% 50px 7%;
+    margin: 30px 7% 30px 7%;
 }
 
 /* footer segment of the page */
-.footer{
-    position:sticky; /*make it sticky when scrolling*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start; 
+    padding: 10px 0px 5% 60px;
     bottom: 0;
     width: 100%;
-    padding: 100px 60px;
     background-color: teal;
     overflow: hidden;
-    top: auto;
+    font-family: 'Open Sans';
 }
 
-.footer h1{
+#footer-left{
+    max-width: fit-content;
+}
+
+h4{
     text-decoration: underline;
-    font-size: 50px;
+    font-size: 6ch;
 }
 
-.footer a{
-    color: black;
+#footer-left a{
+    margin:0;
     text-decoration: none;
     font-size: 30px;
+    margin-right: 5%;
+    font-weight: lighter;
 }
 
-.footer h3{
+#footer-right{
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 200px;
+    margin-right: 0;
+}
+
+#footer-right h2, a{
+    margin-left:100px;
+}
+
+h3 {
     display: block;
     font-weight: lighter;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    position:static;
 }

@@ -1,8 +1,10 @@
-/* <a href="allProducts.html" target=_blank>Products</a> */
-
-// function openNewPage() {
-
-// addEventListener("click", )
-// }
-
-// add a animated loading button for the video as it loads. After being clicked by user
+const scrollToButtons = document.querySelectorAll('button[id^="scrollTo"]');
+    scrollToButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            openNewPage('/Medical_IllnessNav_Page/medical_illness.html');
+        });
+    });
+const pageUrl = '/Medical_IllnessNav_Page/medical_illness.html';
+    function openNewPage(pageUrl) {
+        window.open(pageUrl, '_blank');
+    }

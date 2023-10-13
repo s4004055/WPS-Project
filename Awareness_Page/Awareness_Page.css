@@ -89,10 +89,11 @@ li.item a:hover {
     border: 2px solid rgb(12, 113, 163);
 }
 
+/*Post Navigation Bar - Body of website*/
 
 .first_section{
     margin: 0;
-    padding: 400px;
+    padding: 350px 400px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -107,15 +108,27 @@ li.item a:hover {
     text-decoration: underline;
     display: grid;
 }
-
+/*INSERT API VIDEO PADDING*/
 .first_section #explanation_video{
-    border: 1px solid black;
-    padding: 10px; /*only here for testing purposes*/
-    float: left;
+    border: 1px dashed black;
+    padding: 200px 350px; /*only here for testing purposes*/
+    position: absolute;
+    top: 300px;
+    left: 40px;
+}
+
+
+#symptoms h2{
+    margin-top: 20px;
+    font-size: 80px;
+    font-family: 'Graduate', serif;
+    text-decoration: underline;
+    color: grey;
+    text-align: center;
 }
 
 .first_section #symptoms{
-    height: 700px;
+    height: 520px;
     width: 500px;
     border: 1px solid gray;
     background-color: white;
@@ -124,16 +137,26 @@ li.item a:hover {
     position: absolute;
     right: 70px;
     top:200px;
+    height: 520px;
+    overflow-y: auto;
 }
 
-.first_section #symptoms h2{
-    margin-top: 20px;
-    font-size: 80px;
-    font-family: 'Graduate', serif;
-    text-decoration: underline;
-    color: grey;
-    text-align: center;
+/*style checkboxes*/
+#symptoms ul {
+    list-style-type: none;
+    padding-left: 10%;
+    border: 1px solid black;
+    margin: 0px;
+    font-family: 'Open Sans';
 }
+
+#symptoms li {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+
 
 .second_section{
     margin: 0;
@@ -207,10 +230,67 @@ li.item a:hover {
     color: white;
 }
 
-.third_section{
+.third_section {
     margin: 0;
-    padding: 300px;
-    background-color:rgb(236, 234, 234);
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.news_section {
+    flex: 2;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.news_section h2{
+    font-family: 'Open Sans';
+    text-decoration: underline;
+    font-size: 7ch;
+    margin-bottom: 10px;
+}
+
+.news_banner{
+    border: 1px solid slateblue;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+#news_video_section{
+    max-width: fit-content;
+    display: inline-block;
+    padding: 170px 150px;
+    height:100px;
+    border-radius: 40px;
+    background-color: lightgrey;
+    margin: 0px 50px 50px 0px;
+}
+
+#news_video_section:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+/* #news_video{
+    border: 1px solid blue;
+    padding: 100px;
+    background-color: darkgray;
+    border-radius: 50px;
+}
+
+#news_desc{
+     border: 1px solid blue;
+    padding: 100px;
+    background-color: darkgray;
+    border-radius: 50px;
+} */
+
+.facts_slider {
+    border: 3px solid green;
+    flex: 1;
+    padding: 50px;
+    box-sizing: border-box;
 }
 
 .Test_for_illness {

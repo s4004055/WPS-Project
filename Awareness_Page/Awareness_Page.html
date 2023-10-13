@@ -21,44 +21,61 @@
     <div class="nav_banner">
         <div id="nav_buttons">
             <span>
-                <button id="scrollToA" onclick="openNewPage()">A</button>
-                <button id="scrollToB">B</button>
-                <button id="scrollToC">C</button>
-                <button id="scrollToD">D</button>
-                <button id="scrollToE">E</button>
-                <button id="scrollToF">F</button>
-                <button id="scrollToG">G</button>
-                <button id="scrollToH">H</button>
-                <button id="scrollToI">I</button>
-                <button id="scrollToJ">J</button>
-                <button id="scrollToK">K</button>
-                <button id="scrollToL">L</button>
-                <button id="scrollToM">M</button>
-                <button id="scrollToN">N</button>
-                <button id="scrollToO">O</button>
-                <button id="scrollToP">P</button>
-                <button id="scrollToQ">Q</button>
-                <button id="scrollToR">R</button>
-                <button id="scrollToS">S</button>
-                <button id="scrollToT">T</button>
-                <button id="scrollToU">U</button>
-                <button id="scrollToV">V</button>
-                <button id="scrollToW">W</button>
-                <button id="scrollToX">X</button>
-                <button id="scrollToY">Y</button>
-                <button id="scrollToZ">Z</button>
+                <button id="scrollToA" onclick="openNewPage(pageUrl)">A</button>
+                <button id="scrollToB" onclick="openNewPage(pageUrl)">B</button>
+                <button id="scrollToC" onclick="openNewPage(pageUrl)">C</button>
+                <button id="scrollToD" onclick="openNewPage(pageUrl)">D</button>
+                <button id="scrollToE" onclick="openNewPage(pageUrl)">E</button>
+                <button id="scrollToF" onclick="openNewPage(pageUrl)">F</button>
+                <button id="scrollToG" onclick="openNewPage(pageUrl)">G</button>
+                <button id="scrollToH" onclick="openNewPage(pageUrl)">H</button>
+                <button id="scrollToI" onclick="openNewPage(pageUrl)">I</button>
+                <button id="scrollToJ" onclick="openNewPage(pageUrl)">J</button>
+                <button id="scrollToK" onclick="openNewPage(pageUrl)">K</button>
+                <button id="scrollToL" onclick="openNewPage(pageUrl)">L</button>
+                <button id="scrollToM" onclick="openNewPage(pageUrl)">M</button>
+                <button id="scrollToN" onclick="openNewPage(pageUrl)">N</button>
+                <button id="scrollToO" onclick="openNewPage(pageUrl)">O</button>
+                <button id="scrollToP" onclick="openNewPage(pageUrl)">P</button>
+                <button id="scrollToQ" onclick="openNewPage(pageUrl)">Q</button>
+                <button id="scrollToR" onclick="openNewPage(pageUrl)">R</button>
+                <button id="scrollToS" onclick="openNewPage(pageUrl)">S</button>
+                <button id="scrollToT" onclick="openNewPage(pageUrl)">T</button>
+                <button id="scrollToU" onclick="openNewPage(pageUrl)">U</button>
+                <button id="scrollToV" onclick="openNewPage(pageUrl)">V</button>
+                <button id="scrollToW" onclick="openNewPage(pageUrl)">W</button>
+                <button id="scrollToX" onclick="openNewPage(pageUrl)">X</button>
+                <button id="scrollToY" onclick="openNewPage(pageUrl)">Y</button>
+                <button id="scrollToZ" onclick="openNewPage(pageUrl)">Z</button>
             </span>
         </div>
         </div>
 
+        <a href="/Medical_IllnessNav_Page/medical_illness.html"></a>
 
 
         <div class="first_section">
-            <h1>What is __?</h1> <!--What is ___?-->
+            <h1>What is __?</h1> <!--What is nameTopic?-->
+            <!--FETCH API HERE FROM DATABASE LINKING TO YOUTUBE SOURCE-->
             <div id="explanation_video"></div>
             <script src="script.js"></script>
             <div id="symptoms">
                 <h2>Symptoms</h2>
+                <ul> <!--if checkboxes (certain percentage) is clicked send out an alert to consult a doctor-->
+                    <li><input type="checkbox" id="symptom1"><label for="symptom1">Example 1</label></li>
+                    <li><input type="checkbox" id="symptom2"><label for="symptom2">Example 2</label></li>
+                    <li><input type="checkbox" id="symptom3"><label for="symptom3">Example 3</label></li>
+                    <li><input type="checkbox" id="symptom4"><label for="symptom4">Example 4</label></li>
+                    <li><input type="checkbox" id="symptom5"><label for="symptom5">Example 5</label></li>
+                    <li><input type="checkbox" id="symptom6"><label for="symptom6">Example 6</label></li>
+                    <li><input type="checkbox" id="symptom7"><label for="symptom7">Example 7</label></li>
+                    <li><input type="checkbox" id="symptom8"><label for="symptom8">Example 8</label></li>
+                    <li><input type="checkbox" id="symptom9"><label for="symptom9">Example 9</label></li>
+                    <li><input type="checkbox" id="symptom10"><label for="symptom10">Example 10</label></li>
+                    <li><input type="checkbox" id="symptom11"><label for="symptom11">Example 11</label></li>
+                    <li><input type="checkbox" id="symptom12"><label for="symptom12">Example 12</label></li>
+                     <!-- Example List -->
+                </ul>
             </div>
         </div>
     
@@ -150,9 +167,27 @@
         </div>
     
         <div class="third_section">
-            This it the third section.
+            <div class="news_section">
+                <h2>News</h2>
+                <div class="news_banner">
+                    <div id="news_video_section">
+                        <div id="news_video"></div>
+                        <div id="news_desc"></div>
+                    </div>
+
+                    <div id="news_video_section"></div>
+                    <div id="news_video_section"></div>
+                    <div id="news_video_section"></div>
+                    <div id="news_video_section"></div>
+                    <div id="news_video_section"></div>
+                    <div id="news_video_section"></div>
+                    <div id="news_video_section"></div>
+                </div>
+            </div>
+            <img src="/Awareness_Page/AwarenessPage_src/barrier.png" height="500px">
+            <div class="facts_slider">
+            </div>
         </div>
-    
     
             <div class="Test_for_illness">
                 <h1>Test for __</h1>

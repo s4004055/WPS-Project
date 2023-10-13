@@ -92,19 +92,142 @@ li.item a:hover {
 /* section below nav bar */
 
 .banner{
-    padding:100px;
-    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
     margin-top:20px;
     background-color: #00b894;
-    display: fixed;
 }
+
 h1{
     font-family: 'Graduate', serif;
     text-decoration: underline;
-    font-size: 6ch;
+    font-size: 10ch;
     font-weight: lighter;
 }
 
 .banner img{
-    display: flex;
+    margin-left: 20px;
+}
+.medication_section{
+    height:80vh;
+    border: 1px solid blue;
+    max-width: 50%;
+}
+
+.medication_section i {
+    display: inline-block; 
+    margin-right: 5px;
+    max-width: fit-content;
+}
+
+.medication_section h4 {
+    font-size: 5ch;
+    font-family: 'Open Sans';
+    margin: 0px 10px 30px 10px;
+    display: inline-block;
+}
+#common_medicationList{
+    margin-left: 5%;
+}
+
+.medication_slider{
+    border: 1px solid salmon;
+    max-width: fit-content;
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding:200px;
+    height: 300px;
+    width:400px;
+    /* display: position slider to the left of medication_section appearing on the same section line*/
+    /* margin-left: auto;
+    margin-right: 10px; */
+
+}
+
+.medication_section h2 , .supportiveCare_section h2{
+    font-family: 'Open Sans';
+    font-size:6ch;
+    max-width: fit-content;
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding:10px;
+    margin: 20px 0px 5% 10%;
+}
+
+.supportiveCare_section{
+    height: 60vh;
+}
+
+#supportiveCare_tabs{
+    padding:15%;
+    background-color: gray;
+    opacity: 0.6;
+   /*insert line border*/
+}
+
+.medication_chart{
+    /* padding:80vh; */
+}
+
+#chartSection{
+    background-color: lightgray;
+    padding:10px 0px 100px 0px;
+    margin: 50px 100px 0px 100px;
+    border-radius: 50px;
+}
+
+#chartSection:hover{
+    box-shadow: 3px 8px 12px;
+    background-color:#00b894;
+}
+
+#chartSection h2{
+    font-family: 'Graduate', serif;
+    font-size: 6ch;
+    font-weight:lighter;
+}
+
+#chart{
+    border: 1px solid black;
+    padding:0px 10px 200px 0px;
+    margin: 0px 10% 0px 10%;
+    background-color: rgb(246, 244, 244);
+}
+
+#summaryPoints{
+    padding: 10%;
+    background-color: white;
+    margin: 30px 7% 50px 7%;
+}
+
+/* footer segment of the page */
+.footer{
+    position:sticky; /*make it sticky when scrolling*/
+    bottom: 0;
+    width: 100%;
+    padding: 100px 60px;
+    background-color: teal;
+    overflow: hidden;
+    top: auto;
+}
+
+.footer h1{
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+.footer a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.footer h3{
+    display: block;
+    font-weight: lighter;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }

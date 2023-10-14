@@ -31,7 +31,6 @@ li.item {
     display: flex; 
     justify-content: space-between;
     font-size: 20px;
-    
 }
 
 li.item a {
@@ -95,7 +94,7 @@ li.item a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 30px;
     margin-top:20px;
     background-color: #00b894;
 }
@@ -103,7 +102,7 @@ li.item a:hover {
 h1{
     font-family: 'Graduate', serif;
     text-decoration: underline;
-    font-size: 10ch;
+    font-size: 8ch;
     font-weight: lighter;
 }
 
@@ -123,7 +122,7 @@ h1{
 }
 
 .medication_section h4 {
-    font-size: 5ch;
+    font-size: 4ch;
     font-family: 'Open Sans';
     margin: 0px 10px 30px 10px;
     display: inline-block;
@@ -204,7 +203,51 @@ h1{
 }
 
 /* footer segment of the page */
-footer{
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0 5% 60px;
+    bottom: 0;
+    width: 100%;
+    background-color: teal;
+    overflow: hidden;
+    font-family: 'Open Sans';
+}
+
+#footer-left {
+    max-width: fit-content;
+}
+
+#footer-left h4 {
+    text-decoration: underline;
+    font-size: 6ch;
+}
+
+#footer-left a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 5%;
+    font-weight: lighter;
+}
+
+#footer-right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 200px;
+    margin-right: 0;
+}
+
+#footer-right h2, #footer-right a {
+    margin-right: 100px;
+}
+
+
+
+
+/* footer{
     display: flex;
     justify-content: space-between;
     align-items:flex-start; 
@@ -244,7 +287,7 @@ h4{
 
 #footer-right h2, a{
     margin-left:100px;
-}
+} */
 
 /* h3 {
     position: fixed;

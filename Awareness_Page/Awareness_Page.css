@@ -323,11 +323,11 @@ li.item a:hover {
 }
 
 /* footer segment of the page */
-footer{
+footer {
     display: flex;
     justify-content: space-between;
-    align-items:flex-start; 
-    padding: 10px 0px 5% 60px;
+    align-items: flex-start;
+    padding: 10px 0 5% 60px;
     bottom: 0;
     width: 100%;
     background-color: teal;
@@ -335,25 +335,23 @@ footer{
     font-family: 'Open Sans';
 }
 
-#footer-left{
+#footer-left {
     max-width: fit-content;
 }
 
-h4{
+#footer-left h4 {
     text-decoration: underline;
     font-size: 6ch;
 }
 
-#footer-left a{
-    margin:0;
+#footer-left a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 5%;
     font-weight: lighter;
 }
 
-#footer-right{
-    max-width: fit-content;
+#footer-right {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -361,8 +359,8 @@ h4{
     margin-right: 0;
 }
 
-#footer-right h2, a{
-    margin-right:100px;
+#footer-right h2, #footer-right a {
+    margin-right: 100px;
 }
 
 /* h3 {

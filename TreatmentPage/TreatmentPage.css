@@ -1,0 +1,297 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(236, 234, 234);
+    margin: 0;
+    min-height:min-content;
+    overflow-x: hidden;
+}
+
+.nav-section{
+    background-color: white;
+    padding: 10px 0px;
+    border: 1px solid darkgrey;
+}
+
+ul.nav-bar{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    overflow: hidden;
+}
+
+li.item {
+    float:inline-start; 
+    display: flex; 
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+li.item a {
+    display:inline-block;
+    color:black;
+    text-align:center;
+    border: 1px solid darkgrey;
+    background-color: lightgray;
+    padding: 10px;
+    width:250px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+li.item a:hover {
+    background-color: gray; 
+    color: white;
+}
+
+.nav_banner{
+    padding: 0px;
+    background-color: black;
+    border: 1px solid gray;
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    position: relative;
+}
+
+#nav_buttons button{
+    padding:30px;
+    border-radius: 50%;
+    height:40px;
+    width:40px;
+    text-transform: uppercase;
+    background-color: gray;
+    color: white;
+    border: 1px solid gray;
+    font-weight: thin;
+    margin: 0px;
+    cursor:pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#nav_buttons span button {
+    font-size: 30px;
+    /*try positioning nav buttons and add links to pages*/
+}
+
+#nav_buttons button:hover{
+    background-color: rgb(236, 234, 234);
+    color:rgb(12, 113, 163);
+    border: 2px solid rgb(12, 113, 163);
+}
+
+/* section below nav bar */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-top:20px;
+    background-color: #00b894;
+}
+
+h1{
+    font-family: 'Graduate', serif;
+    text-decoration: underline;
+    font-size: 8ch;
+    font-weight: lighter;
+}
+
+.banner img{
+    margin-left: 20px;
+}
+.medication_section{
+    height:80vh;
+    border: 1px solid blue;
+    max-width: 50%;
+}
+
+.medication_section i {
+    display: inline-block; 
+    margin-right: 5px;
+    max-width: fit-content;
+}
+
+.medication_section h4 {
+    font-size: 4ch;
+    font-family: 'Open Sans';
+    margin: 0px 10px 30px 10px;
+    display: inline-block;
+}
+#common_medicationList{
+    margin-left: 5%;
+}
+
+.medication_slider{
+    border: 1px solid salmon;
+    max-width: fit-content;
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding:200px;
+    height: 300px;
+    width:400px;
+    /* display: position slider to the left of medication_section appearing on the same section line*/
+    /* margin-left: auto;
+    margin-right: 10px; */
+
+}
+
+.medication_section > h2 , .supportiveCare_section > h2{
+    font-family: 'Open Sans';
+    font-size:6ch;
+    max-width: fit-content;
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding:10px;
+    margin: 20px 0px 5% 10%;
+}
+
+.supportiveCare_section{
+    height: 60vh;
+}
+
+#supportiveCare_tabs{
+    padding:15%;
+    background-color: gray;
+    opacity: 0.6;
+   /*insert line border*/
+}
+
+/* .medication_chart{
+} */
+
+#chartSection{
+    background-color: lightgray;
+    padding:10px 0px 100px 0px;
+    margin: 30px 100px 0px 100px;
+    border-radius: 50px;
+}
+
+#chartSection:hover{
+    box-shadow: 3px 8px 12px;
+    background-color:#00b894;
+}
+
+#chartSection h2{
+    margin-left:10%;
+    margin-bottom: 10px;
+    font-family: 'Graduate', serif;
+    font-size: 6ch;
+    font-weight:lighter;
+}
+
+#chart{
+    border: 1px solid black;
+    padding:0px 10px 200px 0px;
+    margin: 0px 10% 0px 10%;
+    background-color: rgb(246, 244, 244);
+}
+
+#summaryPoints{
+    padding: 10%;
+    background-color: white;
+    margin: 30px 7% 30px 7%;
+}
+
+/* footer segment of the page */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0 5% 60px;
+    bottom: 0;
+    width: 100%;
+    background-color: teal;
+    overflow: hidden;
+    font-family: 'Open Sans';
+}
+
+#footer-left {
+    max-width: fit-content;
+}
+
+#footer-left h4 {
+    text-decoration: underline;
+    font-size: 6ch;
+}
+
+#footer-left a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 5%;
+    font-weight: lighter;
+}
+
+#footer-right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 200px;
+    margin-right: 0;
+}
+
+#footer-right h2, #footer-right a {
+    margin-right: 100px;
+}
+
+
+
+
+/* footer{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start; 
+    padding: 10px 0px 5% 60px;
+    bottom: 0;
+    width: 100%;
+    background-color: teal;
+    overflow: hidden;
+    font-family: 'Open Sans';
+}
+
+#footer-left{
+    max-width: fit-content;
+}
+
+h4{
+    text-decoration: underline;
+    font-size: 6ch;
+}
+
+#footer-left a{
+    margin:0;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 5%;
+    font-weight: lighter;
+}
+
+#footer-right{
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 200px;
+    margin-right: 0;
+}
+
+#footer-right h2, a{
+    margin-left:100px;
+} */
+
+/* h3 {
+    position: fixed;
+    bottom: 10px;
+    left: 89%;
+    width: 100%;
+} */

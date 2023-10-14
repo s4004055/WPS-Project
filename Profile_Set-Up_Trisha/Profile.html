@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="Profile.css">
+    <script src="Profile.js"></script>
 </head>
 <body>
     <form action="" method="post">
     <div id="heading">
     <h1>Profile</h1>
     <h3 id="message">Note (*) marks required information</h3>
+
+    <div id="user_pic">
+    <img src="/Profile_Set-Up_Trisha/Profile_src/user_profile_placeholder.jpeg" width="200" height="200">
+    </div>
     </div>
 
     <div class="fullName">
@@ -47,7 +52,12 @@
         <input type="text" id="city" name="city" placeholder="City" required><br>
         <select type="text" id="state" name="state" placeholder="State" required><br>
             <option value="state">VIC</option>
+            <option value="state">NT</option>
+            <option value="state">WA</option>
+            <option value="state">QLD</option>
+            <option value="state">NSW</option>
             <option value="state">SA</option>
+            <option value="state">ACT</option>
         </select>
         <input type="text" id="postcode" name="postcode" placeholder="Postcode" required><br> <!--Add javascript to validate, 4 numbers and must be numbers-->
     </div>
@@ -83,6 +93,9 @@
         <input type="creditCard" id="creditCard" name="creditCard" placeholder="XXXX XXXX">
     </div>
     </div>
+
+    <input type="submit" id="submit_button" value="Submit">
+    <!-- add submit button and have the page marker for system visibility heuristics. -->
     </form>
 </body>
 </html>

@@ -1,0 +1,371 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(236, 234, 234);
+    margin: 0;
+    min-height:min-content;
+    overflow-x: hidden;
+}
+
+.nav-section{
+    background-color: white;
+    padding: 10px 0px;
+    border: 1px solid darkgrey;
+}
+
+ul.nav-bar{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    overflow: hidden;
+}
+
+li.item {
+    float:inline-start; 
+    display: flex; 
+    justify-content: space-between;
+    font-size: 20px;
+    
+}
+
+li.item a {
+    display:inline-block;
+    color:black;
+    text-align:center;
+    border: 1px solid darkgrey;
+    background-color: lightgray;
+    padding: 10px;
+    width:250px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+li.item a:hover {
+    background-color: gray; 
+    color: white;
+}
+
+.nav_banner{
+    padding: 0px;
+    background-color: black;
+    border: 1px solid gray;
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    position: relative;
+}
+
+#nav_buttons button{
+    padding:30px;
+    border-radius: 50%;
+    height:40px;
+    width:40px;
+    text-transform: uppercase;
+    background-color: gray;
+    color: white;
+    border: 1px solid gray;
+    font-weight: thin;
+    margin: 0px;
+    cursor:pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#nav_buttons span button {
+    font-size: 30px;
+    /*try positioning nav buttons and add links to pages*/
+}
+
+#nav_buttons button:hover{
+    background-color: rgb(236, 234, 234);
+    color:rgb(12, 113, 163);
+    border: 2px solid rgb(12, 113, 163);
+}
+
+/*Post Navigation Bar - Body of website*/
+
+.first_section{
+    margin: 0;
+    padding: 350px 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.first_section h1{
+    font-size:8ch;
+    position: absolute;
+    left:10px;
+    top:200px;
+    margin-left: 30px;
+    font-family: 'Graduate', serif;
+    text-decoration: underline;
+    display: grid;
+}
+/*INSERT API VIDEO PADDING*/
+.first_section #explanation_video{
+    border: 1px dashed black;
+    padding: 200px 350px; /*only here for testing purposes*/
+    position: absolute;
+    top: 300px;
+    left: 40px;
+    background-color: white;
+}
+
+
+#symptoms h2{
+    margin-top: 20px;
+    font-size: 80px;
+    font-family: 'Graduate', serif;
+    text-decoration: underline;
+    color: grey;
+    text-align: center;
+}
+
+.first_section #symptoms{
+    height: 520px;
+    width: 500px;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 100px;
+    display: grid;
+    position: absolute;
+    right: 70px;
+    top:200px;
+    height: 520px;
+    overflow-y: auto;
+}
+
+/*style checkboxes*/
+#symptoms ul {
+    list-style-type: none;
+    padding-left: 10%;
+    border: 1px solid black;
+    margin: 0px;
+    font-family: 'Open Sans';
+}
+
+#symptoms li {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+
+
+.second_section{
+    margin: 0;
+    padding: 30px 0;
+    background-color:#1cb08f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.second_section h2{
+    font-size: 8ch;
+    color: white;
+    font-family: 'Open Sans';
+    margin: 0;
+    position: absolute;
+    top: 5px;
+    left: 21%; /* Center the heading horizontally */
+    transform: translateX(-50%);
+    font-family: 'Open Sans';
+}
+
+.second_section_scroll{
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: relative;
+    left: 4%;
+    margin-bottom: 50px;
+    margin-right:50px;
+}
+
+#cards_banner{
+    background-color: white;
+    /* padding:195px; */
+    margin-top: 100px;
+    max-width: min-content;
+    display: inline-block;
+    margin-right: 30px;
+    
+}
+
+#second_video{
+    border: 1px solid darkgray;
+    margin: 30px 30px 0px 30px;
+    padding:100px;
+    border-radius: 10px;
+    text-align: center; /*temporary until database videos are inserted*/
+}
+
+#second_vid_desc{
+    padding:100px;
+    border: 1px solid lightgray; /*once added text remove border*/
+    margin: 0px 30px 30px 30px;
+}
+
+.second_sectionBtn{
+    padding:15px;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    top:90%;
+    left:93.5%;
+    background-color: white;
+    font-family: 'Open Sans';
+}
+
+.second_sectionBtn:hover{
+    background-color: #ff6f61;
+    color: white;
+}
+
+.third_section {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.news_section {
+    flex: 2;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.news_section h2{
+    font-family: 'Open Sans';
+    text-decoration: underline;
+    font-size: 7ch;
+    margin-bottom: 10px;
+}
+
+.news_banner{
+    border: 1px solid slateblue;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+#news_video_section{
+    max-width: fit-content;
+    display: inline-block;
+    padding: 170px 150px;
+    height:100px;
+    border-radius: 40px;
+    background-color: lightgrey;
+    margin: 0px 50px 50px 0px;
+}
+
+#news_video_section:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+.facts_slider {
+    border: 3px solid green;
+    flex: 1;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: lightgrey;
+}
+
+.Test_for_illness {
+    background-image: url('/Awareness_Page/AwarenessPage_src/ContactRedirect.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    padding: 80px 40px;
+    margin: 0px 0px;
+    font-family: 'Open sans';
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    align-self: top;
+}
+
+.Test_for_illness h2 {
+    text-align: left;
+    margin-left: 0px; 
+}
+
+.Test_for_illness p{
+    font-size: 20px;
+    max-width: fit-content;
+    padding:10px;
+    font-weight: 300;
+    letter-spacing: 2px; /*add alignment spacing*/
+}
+
+.Test_for_illness button{
+    padding:5px 10px;
+    border-radius:5px;
+    background-color: darkgrey;
+    font:black;
+    font-size: 20px;
+    border:none;
+}
+
+.Test_for_illness button:hover{
+    background-color: pink;
+    font-size: 20px;
+    font:white;
+}
+
+/* footer segment of the page */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0 5% 60px;
+    bottom: 0;
+    width: 100%;
+    background-color: teal;
+    overflow: hidden;
+    font-family: 'Open Sans';
+}
+
+#footer-left {
+    max-width: fit-content;
+}
+
+#footer-left h4 {
+    text-decoration: underline;
+    font-size: 6ch;
+}
+
+#footer-left a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 5%;
+    font-weight: lighter;
+}
+
+#footer-right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 200px;
+    margin-right: 0;
+}
+
+#footer-right h2, #footer-right a {
+    margin-right: 100px;
+}
+
+/* h3 {
+    position: fixed;
+    bottom: 10px;
+    left: 89%;
+    width: 100%;
+} */

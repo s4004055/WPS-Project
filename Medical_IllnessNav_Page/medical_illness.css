@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(236, 234, 234);
+    margin: 0;
+    min-height:min-content;
+    overflow-x: hidden;
+}
+
+.nav-section{
+    background-color: white;
+    padding: 10px 0px;
+    border: 1px solid darkgrey;
+}
+
+ul.nav-bar{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    overflow: hidden;
+}
+
+li.item {
+    float:inline-start; 
+    display: flex; 
+    justify-content: space-between;
+    font-size: 20px;
+    
+}
+
+li.item a {
+    display:inline-block;
+    color:black;
+    text-align:center;
+    border: 1px solid darkgrey;
+    background-color: lightgray;
+    padding: 10px;
+    width:250px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+li.item a:hover {
+    background-color: gray; 
+    color: white;
+}
+
+.nav_banner{
+    padding: 0px;
+    background-color: black;
+    border: 1px solid gray;
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    position: relative;
+}
+
+#nav_buttons button{
+    padding:30px;
+    border-radius: 50%;
+    height:40px;
+    width:40px;
+    text-transform: uppercase;
+    background-color: gray;
+    color: white;
+    border: 1px solid gray;
+    font-weight: thin;
+    margin: 0px;
+    cursor:pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#nav_buttons span button {
+    font-size: 30px;
+    /*try positioning nav buttons and add links to pages*/
+}
+
+#nav_buttons button:hover{
+    background-color: rgb(236, 234, 234);
+    color:rgb(12, 113, 163);
+    border: 2px solid rgb(12, 113, 163);
+}
+
+.box1, .box2{
+    background-color: lightgray;
+    border: 1px solid rgb(194, 193, 193);
+    padding: 50px;
+    height: 45%;
+    width:45%;
+    margin:30px 30px;
+    display: nowrap;            /*ensure box sizing elements and everything remains the same */
+}
+
+.box1 h1, .box2 h1{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10ch;
+}
+.box1{
+    float:left
+}
+
+.box1:hover, .box2:hover{
+    background-color: rgb(202, 200, 200);
+}
+
+#topic{
+    padding: 0px;
+    width: 100%;
+    height:70px;
+    border: 1px solid slategray;
+    display: block;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 3.5ch;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    padding-left:10px; /*added indetation aligning the text within the tabs*/
+    padding-top:10px;
+}
+
+#topic:hover{
+    background-color: teal;
+    color:white;
+}
+
+.box2{
+    float:right;
+}

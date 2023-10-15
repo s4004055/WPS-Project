@@ -113,6 +113,8 @@ h1{
     height:80vh;
     border: 1px solid blue;
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .medication_section i {
@@ -129,16 +131,18 @@ h1{
 }
 #common_medicationList{
     margin-left: 5%;
+    flex: 1;
 }
 
 .medication_slider{
     border: 1px solid salmon;
     max-width: fit-content;
     background-color: lightgrey;
+    opacity:0.8;
     border-radius: 20px;
-    padding:200px;
-    height: 300px;
-    width:400px;
+    padding:150px;
+    height: auto;
+    width:auto;
     /* display: position slider to the left of medication_section appearing on the same section line*/
     /* margin-left: auto;
     margin-right: 10px; */
@@ -152,22 +156,41 @@ h1{
     background-color: lightgrey;
     border-radius: 20px;
     padding:10px;
-    margin: 20px 0px 5% 10%;
+    margin: 20px 0px 2% 10%;
 }
+
 
 .supportiveCare_section{
-    height: 60vh;
+    height: auto;
 }
 
-#supportiveCare_tabs{
-    padding:15%;
+#supportiveCare_tabs {
     background-color: gray;
     opacity: 0.6;
-   /*insert line border*/
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: fit-content;
 }
 
-/* .medication_chart{
-} */
+.card_section {
+    border: 1px solid blue;
+    padding: 0px;
+    height: 500px;
+    width: 250px;
+    margin: 10px;
+    display:flex;
+    background-color: lightgrey;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+#card_content{
+    margin: 10px auto;
+    padding: 50%;
+    align-self: center;
+    background-color: white;
+}
 
 #chartSection{
     background-color: lightgray;
@@ -243,51 +266,6 @@ footer {
 #footer-right h2, #footer-right a {
     margin-right: 100px;
 }
-
-
-
-
-/* footer{
-    display: flex;
-    justify-content: space-between;
-    align-items:flex-start; 
-    padding: 10px 0px 5% 60px;
-    bottom: 0;
-    width: 100%;
-    background-color: teal;
-    overflow: hidden;
-    font-family: 'Open Sans';
-}
-
-#footer-left{
-    max-width: fit-content;
-}
-
-h4{
-    text-decoration: underline;
-    font-size: 6ch;
-}
-
-#footer-left a{
-    margin:0;
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 5%;
-    font-weight: lighter;
-}
-
-#footer-right{
-    max-width: fit-content;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin-left: 200px;
-    margin-right: 0;
-}
-
-#footer-right h2, a{
-    margin-left:100px;
-} */
 
 /* h3 {
     position: fixed;

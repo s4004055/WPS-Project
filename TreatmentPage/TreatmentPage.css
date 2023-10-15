@@ -109,10 +109,10 @@ h1{
 .banner img{
     margin-left: 20px;
 }
+
 .medication_section{
     height:80vh;
-    border: 1px solid blue;
-    max-width: 50%;
+    max-width: auto;
     display: flex;
     flex-direction: column;
 }
@@ -135,21 +135,37 @@ h1{
 }
 
 .medication_slider{
-    border: 1px solid salmon;
     max-width: fit-content;
     background-color: lightgrey;
-    opacity:0.8;
     border-radius: 20px;
-    padding:150px;
-    height: auto;
-    width:auto;
-    /* display: position slider to the left of medication_section appearing on the same section line*/
-    /* margin-left: auto;
-    margin-right: 10px; */
-
+    align-self: center;
+    margin-left:40%;
+    height: 350px;
+    width:500px;
+    display:flex;
+    position: relative;
+    white-space: nowrap;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
 }
 
-.medication_section > h2 , .supportiveCare_section > h2{
+
+.treatment_Container{
+    border: none;
+    display:flex;
+}
+
+.medication_section > h2 {
+    font-family: 'Open Sans';
+    font-size:6ch;
+    max-width: fit-content;
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding:10px;
+    padding-right: 50px;
+    margin: 20px 20px 2% 10%;
+}
+.supportiveCare_section > h2{
     font-family: 'Open Sans';
     font-size:6ch;
     max-width: fit-content;

@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    overflow-y: auto;
 }
 
 body{
@@ -51,49 +52,99 @@ li.item a:hover {
     color: white;
 }
 
-.nav_banner{
-    padding: 0px;
-    background-color: black;
-    border: 1px solid gray;
-    display: flex;
-    white-space: nowrap;
-    overflow-x: auto;
+
+.alphabet_marker{
+    font-size:15ch;
+    font-family: 'Open Sans';
+    background-color: lightgrey;
+    border-radius:20px;
+    padding:30px 60px;
+    margin: 100px 0px 0px 100px;
+    max-width: fit-content;
+}
+
+.resource_Tab{
+    background-color: teal;
+    padding:0;
+    width: 40%;
+    height: auto;
+    border-radius: 30px;
+    border: 1px solid blue;
+    align-items: center;
     position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 5%;
 }
 
-#nav_buttons button{
-    padding:30px;
-    border-radius: 50%;
-    height:40px;
-    width:40px;
-    text-transform: uppercase;
-    background-color: gray;
+.resource_Tab h1{
+    font-family: 'Open Sans';
     color: white;
-    border: 1px solid gray;
-    font-weight: thin;
-    margin: 0px;
-    cursor:pointer;
-    display: inline-flex;
+    font-weight:lighter;
+    font-size:6ch;
+    text-align: left;
+    margin-left:20px;
+}
+
+#resource_Content a{
+    font-size: 4ch;
+    font-family: 'Open Sans';
+    margin: 40px;
+    text-align:center;
+    font-weight:lighter;
+    color: #1d5e91;
+}
+
+#resource_Content h3{
+    align-self: center;
+    text-align:center;
+    font-family: 'Open Sans';
+    color:white;
+}
+
+
+#resource_Content{
+    background-color: #1cb08f;
+    padding:0;
+    margin: 10px 30px 40px 20px;
+    border-radius: 20px;
+    height: 150px;
+    position:relative;
+}
+
+.borderline{
+    border: 1px solid black;
+    margin: 5%;
+}
+
+.resources_nav {
+    display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
-#nav_buttons span button {
-    font-size: 30px;
-    /*try positioning nav buttons and add links to pages*/
+.resources_nav button{
+    padding:0;
+    height:50px;
+    width:50px;
+    font-size:5ch;
+    text-decoration: none;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    margin: 10px 10px 5% 10px;
+    color: grey;
+    font-family: 'Open Sans';
 }
 
-#nav_buttons button:hover{
-    background-color: rgb(236, 234, 234);
-    color:rgb(12, 113, 163);
-    border: 2px solid rgb(12, 113, 163);
+button:hover{
+    background-color: #1cb08f;
+    color: white;
 }
 
-/*in place of content - temporary*/
-#resources_section{
-    padding: 90%;
+button #previous{
+    border:none;
 }
-
 /*footer segment of the page*/
 
 footer {
